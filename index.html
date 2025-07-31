@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"> <head><!-- basic --><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- mobile metas --><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="initial-scale=1, maximum-scale=1"><!-- site metas --><title>Hyperbiotics</title><meta name="keywords" content=""><meta name="description" content=""><meta name="author" content=""><!-- style css --><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></head> <!-- body --> <body class="main-layout"> <!----header--Start-here--> <header class="header-main"> <div class="container"> <div class="inner-header"> <div class="logo-left"> <span class="nav-open"><i class="fa-solid fa-bars"></i></span> <a href=""><img src="images/logo.png"></a> </div> <div class="middle-nav"> <nav> <ul> <li><a href="/" class="active">Home</a></li> <li><a href="/services" class>Services</a></li> <li><a href="/about-us" class>About Us</a></li> <li><a href="/contact-us" class>Contact Us</a></li> </ul> </nav> </div> <div class="call-lang"> <span class="btn-cll"><a href="tel:(407) 699-6324"><img src="images/icon-phone.png"> (407) 699-6324</a></span> <div class="language-drop-down"> <div class="language-selector"> <img src="images/down-arrow.png" class="down-arrow"> <div class="selected-language"> <img src="https://flagcdn.com/gb.svg" alt="English"> English
+</div> <div class="language-dropdown"> <div class="language-option" data-lang="en" data-flag="https://flagcdn.com/gb.svg"> <img src="https://flagcdn.com/gb.svg" alt="English"> English
+</div> <div class="language-option" data-lang="de" data-flag="https://flagcdn.com/de.svg"> <img src="https://flagcdn.com/de.svg" alt="German"> German
+</div> <div class="language-option" data-lang="fr" data-flag="https://flagcdn.com/fr.svg"> <img src="https://flagcdn.com/fr.svg" alt="French"> French
+</div> </div> </div> </div> </div> </div> </div> </header> <!----header--End-here--->  <section class="banner-section"> <div class="container"> <div class="banner-inner"> <h2>Explore our curated collection
+of innovative, premium services to enhance your lifestyle.</h2> <a href="/contact-us" class="btn-primary">Book Free Consultation</a> </div> <div class="card-inner"> <div class="card-img"> <a href="/counter-top"><img src="images/img-1.png"> <h5>Counter Tops</h5></a> </div> <div class="card-img"> <a href="/cabinet"><img src="images/img-2.png"> <h5>CABINETS</h5></a> </div> <div class="card-img"> <a href="/outdoor"><img src="images/img-3.png"> <h5>OUTDOORS</h5></a> </div> <div class="card-img"> <a href="/services"><img src="images/img-4.png"> <h5>SERVICES</h5></a> </div> </div> </div> </section>   <section class="our-mission"> <div class="container"> <div class="our-mission-inner"> <div class="col-50"> <div class="mission-left-content"> <h2>Our Mission <span></span></h2> <p>
+Our mission is to provide premium material and fullservice stone resurfacing for the residents of Central Florida. We exceed our customer’s expectations, from concept to reality, and continue to offer the highest level of service in the industry - with a 100% satisfaction guarantee policy,  lifetime warranty, and seven-day installs. Looking for reliable countertop resurfacing Orlando, look no further!
+</p> <a href="/contact-us" class="btn-primary">Book Free Consultation</a> </div> </div> <div class="col-50 right-trn"> <div class="img-left-misison"> <img src="images/our-mission.png"> </div> </div> </div> </div> </section>   <section class="news-letter-section"> <div class="container"> <div class="news-letter-inner"> <h2> Schedule a <span>Free</span>,<br>
+Same Day consultation</h2> <form> <div class="input-email"> <input type="email" placeholder="Enter Your Email Address"> <img src="images/envelop.svg"></div> <a href="/contact-us" class="btn-primary">Book Now</a> </form> </div> </div> </section>   <footer> <div class="container"> <div class="inner-footer"> <div class="col-33"> <div class="inner-col logo-link"> <a href="javascript:void(0)"><img src="images/foter-logo.png"></a> </div> </div> <div class="col-33"> <div class="inner-col hp-links"> <ul> <li> <a href="javascript:void(0)" class="active"> Counter Tops </a> </li> <li> <a href="javascript:void(0)">Cabinets </a> </li> <li> <a href="javascript:void(0)"> Outdoors </a> </li> <li> <a href="javascript:void(0)"> Services </a> </li> </ul> </div> </div> <div class="col-33"> <div class="inner-col links"> <ul> <li> <a href="javascript:void(0)"><img src="images/phone-icon.png"> (407) 699-6324 </a> </li> <li> <a href="javascript:void(0)"><img src="images/white-invelop.png"> support@crownservices.com </a> </li> </ul> </div> </div> </div> </div> </footer> <div class="inner-copyright"><p>© Copyright 2025, crownservicesorlando.com |  All Rights Reserved</p></div> <!--footer-end-here--> <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> </body> <script>
+$(document).ready(function () {
+$('.selected-language').click(function () {
+$('.language-dropdown').toggle();
+});
+
+$('.language-option').click(function () {
+var selectedText = $(this).text();
+var selectedFlag = $(this).data('flag');
+
+$('.selected-language').html(
+`<img src="${selectedFlag}" alt="${selectedText}"> ${selectedText}`
+);
+
+$('.language-dropdown').hide();
+});
+
+// Optional: Close dropdown on outside click
+$(document).click(function (e) {
+if (!$(e.target).closest('.language-selector').length) {
+$('.language-dropdown').hide();
+}
+});
+});
+$(document).ready(function() {
+// When .nav-open is clicked
+$('.nav-open').click(function() {
+// Toggle the .middle-nav visibility
+$('.middle-nav').toggleClass('open');
+});
+});
+</script> </html>
